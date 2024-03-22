@@ -1,0 +1,60 @@
+#1. Membuat program untuk menampilkan identitas dengan membuat object dari class
+
+print("Francisco (064002300044)")
+print("-----PROGRAM MENAMPILKAN IDENTITAS-----")
+class Praktikan:
+    def __init__(self, nama, nim, fakultas, hobi):
+        self.nama = nama
+        self.nim = nim
+        self.fakultas = fakultas
+        self.hobi = hobi
+
+    def get_nama(self):
+        return self.nama
+
+    def get_nim(self):
+        return self.nim
+
+    def get_fakultas(self):
+        return self.fakultas
+
+    def get_hobi(self):
+        return self.hobi
+
+    def display_info(self):
+        print("Nama saya adalah", self.nama, "NIM saya (" + self.nim + ").")
+        print("Saya dari fakultas", self.fakultas + ".")
+        print("Hobi saya adalah", self.hobi)
+
+
+
+praktikan = Praktikan("Francisco", "064002300044", "Teknik Informatika", "Bermain basket")
+
+praktikan.display_info()
+
+
+#2. Membuat program untuk menghitung luas persegi panjang dengan membuat object dari class
+class PersegiPanjang:
+    def __init__(self, panjang, lebar):
+        self.panjang = panjang
+        self.lebar = lebar
+
+    def get_panjang(self):
+        return self.panjang
+
+    def get_lebar(self):
+        return self.lebar
+
+    def luas(self):
+        return self.panjang * self.lebar
+
+    def display_info(self):
+        print("-----.PROGRAM MENGHITUNG LUAS PERSEGI PANJANG<-----")
+        print("Persegi panjang dengan panjang", self.panjang, "cm dan lebar", self.lebar, "cm memiliki luas sebesar", self.luas(), "cm^2")
+
+
+
+persegi_panjang = PersegiPanjang(20, 12)
+print("Francisco 064002300044 teknik informatika")
+persegi_panjang.display_info()
+
